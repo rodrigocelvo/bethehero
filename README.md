@@ -1,13 +1,13 @@
 <h1 align="center">
-    <img alt="Be The Hero" src="./github/logo.png" width="200px" />
+    <img alt="Be The Hero" src=".github/logo.png" width="200px" />
 </h1>
 
 <h2 align="center">
-    <img alt="Rocketseat" src="./github/rocketseat_logo.png" width="200px" />
+    <img alt="Rocketseat" src=".github/rocketseat_logo.png" width="200px" />
 </h2>
 
 <h2 align="center">
-  <img alt="Semana OmniStack" src="./github/mockup.png" width="1980px" />
+  <img alt="Semana OmniStack" src=".github/mockup.png" width="1980px" />
   🚀 Semana Omnistack 11
 </h2>
 
@@ -48,7 +48,7 @@ Depois que o merge da sua pull request for feito, você pode deletar a sua branc
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
