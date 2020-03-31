@@ -1,13 +1,13 @@
 <h1 align="center">
-    <img alt="Be The Hero" src="./github/logo.png" width="200px" />
+    <img alt="Be The Hero" src=".github/logo.png" width="200px" />
 </h1>
 
 <h2 align="center">
-    <img alt="Rocketseat" src="./github/rocketseat_logo.png" width="200px" />
+    <img alt="Rocketseat" src=".github/rocketseat_logo.png" width="200px" />
 </h2>
 
 <h2 align="center">
-  <img alt="Semana OmniStack" src="./github/mockup.png" width="1980px" />
+  <img alt="Semana OmniStack" src=".github/mockup.png" width="1980px" />
   🚀 Semana Omnistack 11
 </h2>
 
