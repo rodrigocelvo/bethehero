@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './global.css';
+import './utils/darkMode';
 
 import Routes from './routes';
 

@@ -8,9 +8,10 @@
 }
 
 body {
-  font: 400 14px Roboto, sans-serif;
+  font: 400 14px 'Roboto', sans-serif;
   background: #f0f0f5;
   -webkit-font-smoothing: antialiased;
+  transition: 0.2s ease;
 }
 
 input, button, textarea {
@@ -32,7 +33,7 @@ form input {
 
 form textarea {
   width: 100%;
-  resize: vertical;
+  resize: none;
   min-height: 140px;
   color: #333;
   border: 1px solid #dcdce6;
@@ -78,4 +79,45 @@ form textarea {
 }
 .back-link:hover {
   opacity: 0.8;
+}
+
+::selection {
+  background-color: #c3eeff;
+  color: #000;
+}
+
+/* Dark Mode */
+
+.dark-mode body {
+  background-color: rgb(17, 17, 25);
+  color: #fff;
+  transition: 0.2s ease;
+}
+.dark-mode .back-link {
+  color: #676767;
+}
+
+.dark-mode ::selection {
+  background-color: #c895ff;
+  color: #fff;
+}
+
+/* Toastify */
+.Toastify__toast {
+  font-size: 16px !important;
+  padding: 8px 20px !important;
+  font-family: 'Roboto', sans-serif !important;
+  border-radius: 8px!important;
+}
+
+.Toastify__toast--error {
+  background: #dd5554 !important;
+}
+
+.Toastify__toast--success {
+  background: #64d460!important;
+}
+
+.Toastify__progress-bar {
+  background-color: rgba(255, 255, 255, 1) !important;
 }

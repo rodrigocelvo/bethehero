@@ -15,7 +15,6 @@
   background: #f0f0f5;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,4 +44,75 @@
 .new-incident-container .content form input, 
 .new-incident-container .content form textarea {
   margin-top: 8px;
+  border: 2px solid #ddd;
+}
+
+.new-incident-container .content form input:focus, 
+.new-incident-container .content form textarea:focus {
+  border-color: #e02141;
+}
+
+/* Dark Mode */
+
+.dark-mode .new-incident-container .content {
+  background: rgb(23, 23, 33);
+  transition: 0.2s ease;
+  box-shadow: none;
+}
+
+.dark-mode .new-incident-container .content p  {
+  color: #999;
+  transition: 0.2s ease;
+}
+
+.dark-mode .new-incident-container .content form input, 
+.dark-mode .new-incident-container .content form textarea {
+  background: #1f1f2c;
+  border: 2px solid #2e2e42;
+  color: rgb(240, 240, 240);
+}
+
+.dark-mode .new-incident-container .content form input:focus, 
+.dark-mode .new-incident-container .content form textarea:focus {
+  border-color: #e02141;
+}
+
+/* Responsive */
+
+@media(max-width: 1150px) {
+  .new-incident-container {
+    width: 100%;
+    max-width: 1000px; 
+  }
+}
+
+@media(max-width: 1000px) {
+  .new-incident-container {
+    width: 100%;
+    max-width: 800px; 
+  }
+  .new-incident-container .content {
+    padding: 50px;
+    margin: 0;
+  }
+}
+
+@media(max-width: 800px) {
+  .new-incident-container {
+    width: 100%; 
+    max-width: 500px;
+  }
+  .new-incident-container .content {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin: auto 0;
+  }
+}
+
+@media(max-width: 500px) {
+  .new-incident-container .content {
+    border-radius: 0;
+  }
 }

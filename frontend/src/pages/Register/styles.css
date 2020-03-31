@@ -3,7 +3,6 @@
   max-width: 1120px;
   height: 100vh;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +14,6 @@
   background: #f0f0f5;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +42,11 @@
 
 .register-container .content form input {
   margin-top: 8px;
+  border: 2px solid #ddd;
+}
+
+.register-container .content form input:focus {
+  border-color: #e02141;
 }
 
 .register-container .content form .input-group {
@@ -52,4 +55,64 @@
 
 .register-container .content form .input-group input + input {
   margin-left: 8px;
+}
+
+/* Dark Mode */
+
+.dark-mode .register-container .content {
+  background: rgb(23, 23, 33);
+  transition: 0.2s ease;
+  box-shadow: none;
+}
+
+.dark-mode .register-container .content p  {
+  color: #999;
+  transition: 0.2s ease;
+}
+
+.dark-mode .register-container .content form input {
+  background: #1f1f2c;
+  border: 2px solid #2e2e42;
+  color: rgb(240, 240, 240);
+}
+
+.dark-mode .register-container .content form input:focus {
+  border-color: #e02141;
+}
+
+/* Responsive */
+
+@media(max-width: 1150px) {
+  .register-container {
+    width: 100%;
+    max-width: 1000px; 
+  }
+}
+
+@media(max-width: 1000px) {
+  .register-container {
+    width: 100%;
+    max-width: 800px; 
+  }
+  .register-container .content {
+    padding: 50px;
+    margin: 0;
+  }
+}
+
+@media(max-width: 800px) {
+  .register-container {
+    width: 100%; 
+    max-width: 500px;
+  }
+  .register-container .content {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    margin: auto 0;
+  }
+  .register-container .content h1 {
+    margin: 30px 0;
+  }
 }
